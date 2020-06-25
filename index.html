@@ -1,0 +1,8 @@
+{{if .access_token}}
+<h1>Logged In - Actions </h1>
+<p><a href="?action=repos">View Repositories</a></p>
+<p><a href="?action=logout">Log Out</a></p>
+{{else}}
+<h1> Not Logged In - Actions</h1>
+<p><a href="?action=login">Log In to Github</a></p>
+{{end}}
